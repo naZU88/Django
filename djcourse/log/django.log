@@ -1059,3 +1059,84 @@ INFO 2024-04-06 20:50:31,570 autoreload 19032 1516 Watching for file changes wit
 INFO 2024-04-06 20:53:00,142 basehttp 19032 2276 "GET /secondapp/week/20 HTTP/1.1" 200 299
 INFO 2024-04-06 20:53:23,514 basehttp 19032 16176 "GET /secondapp/week/20 HTTP/1.1" 200 299
 INFO 2024-04-06 20:53:24,965 basehttp 19032 16176 "GET /secondapp/week/20 HTTP/1.1" 200 299
+INFO 2024-04-07 12:50:39,542 autoreload 4520 14996 Watching for file changes with StatReloader
+INFO 2024-04-07 12:51:09,678 basehttp 4520 13288 "GET / HTTP/1.1" 200 186
+WARNING 2024-04-07 12:51:13,951 log 4520 13288 Not Found: /favicon.ico
+WARNING 2024-04-07 12:51:13,952 basehttp 4520 13288 "GET /favicon.ico HTTP/1.1" 404 2539
+INFO 2024-04-07 12:51:35,010 basehttp 4520 21600 "GET /fourthapp/user/add HTTP/1.1" 301 0
+ERROR 2024-04-07 12:51:36,426 log 4520 12312 Internal Server Error: /fourthapp/user/add/
+Traceback (most recent call last):
+  File "C:\Users\Лидия\Desktop\Django\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Лидия\Desktop\Django\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Лидия\Desktop\Django\djcourse\fourthapp\views.py", line 18, in user_form
+    return render(request, 'myapp4/user_form.html', {'form': form})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Лидия\Desktop\Django\venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Лидия\Desktop\Django\venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Лидия\Desktop\Django\venv\Lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: myapp4/user_form.html
+ERROR 2024-04-07 12:51:36,447 basehttp 4520 12312 "GET /fourthapp/user/add/ HTTP/1.1" 500 91120
+ERROR 2024-04-07 12:58:11,059 log 4520 10768 Internal Server Error: /fourthapp/user/add/
+Traceback (most recent call last):
+  File "C:\Users\Лидия\Desktop\Django\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Лидия\Desktop\Django\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Лидия\Desktop\Django\djcourse\fourthapp\views.py", line 18, in user_form
+    return render(request, 'myapp4/user_form.html', {'form': form})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Лидия\Desktop\Django\venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Лидия\Desktop\Django\venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Лидия\Desktop\Django\venv\Lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: myapp4/user_form.html
+ERROR 2024-04-07 12:58:11,064 basehttp 4520 10768 "GET /fourthapp/user/add/ HTTP/1.1" 500 91257
+INFO 2024-04-07 12:59:24,386 autoreload 4520 14996 C:\Users\Лидия\Desktop\Django\djcourse\fourthapp\views.py changed, reloading.
+INFO 2024-04-07 12:59:25,493 autoreload 18772 7760 Watching for file changes with StatReloader
+INFO 2024-04-07 12:59:28,900 basehttp 18772 6516 "GET /fourthapp/user/add/ HTTP/1.1" 200 575
+INFO 2024-04-07 14:50:20,812 autoreload 26100 25880 Watching for file changes with StatReloader
+INFO 2024-04-07 14:51:27,916 autoreload 26100 25880 C:\Users\Лидия\Desktop\Django\djcourse\secondapp\forms.py changed, reloading.
+INFO 2024-04-07 14:51:28,651 autoreload 13660 4372 Watching for file changes with StatReloader
+INFO 2024-04-07 14:51:56,604 autoreload 14908 22168 Watching for file changes with StatReloader
+INFO 2024-04-07 14:52:16,133 basehttp 14908 6784 "GET /secondapp/product HTTP/1.1" 301 0
+INFO 2024-04-07 14:52:16,633 basehttp 14908 100 "GET /secondapp/product/ HTTP/1.1" 200 1012
+ERROR 2024-04-07 14:53:11,227 log 14908 100 Internal Server Error: /secondapp/product/
+Traceback (most recent call last):
+  File "C:\Users\Лидия\Desktop\Django\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Лидия\Desktop\Django\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Лидия\Desktop\Django\djcourse\secondapp\views.py", line 55, in upload_product
+    description = form.cleaned_data['description']
+                  ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+KeyError: 'description'
+ERROR 2024-04-07 14:53:11,235 basehttp 14908 100 "POST /secondapp/product/ HTTP/1.1" 500 78161
+INFO 2024-04-07 14:53:42,633 basehttp 14908 100 "GET /secondapp/product/ HTTP/1.1" 200 1012
+INFO 2024-04-07 14:55:09,242 autoreload 14908 22168 C:\Users\Лидия\Desktop\Django\djcourse\secondapp\forms.py changed, reloading.
+INFO 2024-04-07 14:55:10,051 autoreload 18332 18864 Watching for file changes with StatReloader
+INFO 2024-04-07 14:55:13,710 basehttp 18332 8296 "GET /secondapp/product/ HTTP/1.1" 200 1012
+INFO 2024-04-07 14:55:15,272 basehttp 18332 8296 "GET /secondapp/product/ HTTP/1.1" 200 1012
+INFO 2024-04-07 14:55:16,035 basehttp 18332 8296 "GET /secondapp/product/ HTTP/1.1" 200 1012
+INFO 2024-04-07 14:56:00,608 autoreload 18332 18864 C:\Users\Лидия\Desktop\Django\djcourse\secondapp\forms.py changed, reloading.
+INFO 2024-04-07 14:56:01,524 autoreload 10184 20716 Watching for file changes with StatReloader
+INFO 2024-04-07 14:56:12,938 autoreload 10184 20716 C:\Users\Лидия\Desktop\Django\djcourse\secondapp\forms.py changed, reloading.
+INFO 2024-04-07 14:56:13,841 autoreload 25152 9236 Watching for file changes with StatReloader
+INFO 2024-04-07 14:56:15,402 basehttp 25152 24932 "GET /secondapp/product/ HTTP/1.1" 200 1187
+INFO 2024-04-07 14:56:44,542 basehttp 25152 24932 "POST /secondapp/product/ HTTP/1.1" 200 1285

@@ -20,6 +20,7 @@ class Product(models.Model):
     description = models.TextField(max_length=300)    
     price = models.DecimalField(max_digits=8, decimal_places=2)
     quant = models.IntegerField(default=0)
+    photo = models.ImageField(upload_to='products/', null=True, blank=True)
     date_add = models.DateTimeField(default=timezone.now)
 
     def __str__(self):
