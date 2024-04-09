@@ -29,7 +29,7 @@ SESSION_COOKIE_SECURE = True
 CSRF_COOKIE_SECURE = True
 
 
-ALLOWED_HOSTS = ['DJfinalproject.pythonanywhere.com',
+ALLOWED_HOSTS = ['finalprojectdj.pythonanywhere.com',
 ]
 
 
@@ -94,10 +94,10 @@ WSGI_APPLICATION = 'djcourse.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'DJfinalproject$default',
-        'USER': 'DJfinalproject',
+        'NAME': 'finalprojectdj$default',
+        'USER': 'finalprojectdj',
         'PASSWORD': os.getenv('MYSQL_PASSWORD'),
-        'HOST': 'DJfinalproject.mysql.pythonanywhere-services.com',
+        'HOST': 'finalprojectdj.mysql.pythonanywhere-services.com',
         'OPTIONS': {
             'init_command': "SET NAMES 'utf8mb4';SET sql_mode='STRICT_TRANS_TABLES'",
             'charset': 'utf8mb4',
